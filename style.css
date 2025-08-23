@@ -46,77 +46,100 @@ header {
     opacity: 1;
     transform: translateY(0);
   }
-<<<<<<< HEAD
 }
-/* .rs-graybox-para-cont{
-  
-} */
-=======
-  .logo-img {
-    width: 120px;
-    height: 180px;
-    object-fit: contain;
+
+.logo-img {
+  width: 120px;
+  height: 180px;
+  object-fit: contain;
+}
+
+/* ----white-box----- */
+.btn-white-box {
+  border-radius: 25px;
+   opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 0.8s ease forwards;
+  animation-delay: 0.3s;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  align-items: center;
+}
+
+.btn-white-box:hover {
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+
+}
+
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  /* -----------------//footer//-------------------------- */
-  .social-icon-container {
-    display: flex;
-    justify-content: space-between;
+}
+
+/* -----------------//footer//-------------------------- */
+.social-icon-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-media-icon {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .address-para {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .emailbox-para {
-    font-size: 18px;
-    text-align: center;
+  font-size: 18px;
+  text-align: center;
 }
 
 .email-subscribe-box {
 
-    /* max-width: 400px; */
-    /* margin: 0 auto; */
-    /* padding: 20px; */
-    /* text-align: center; */
-    /* text-align: left;
+  /* max-width: 400px; */
+  /* margin: 0 auto; */
+  /* padding: 20px; */
+  /* text-align: center; */
+  /* text-align: left;
      */
 }
 
 .email-subscribe-box input[type="email"] {
-    width: 50%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
 }
 
 .email-subscribe-box button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .email-subscribe-box button:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
 #message {
-    margin-top: 10px;
-    font-size: 13px;
-    color: green;
+  margin-top: 10px;
+  font-size: 13px;
+  color: green;
 }
 
-ul li{
-  list-style-type:none;
+ul li {
+  list-style-type: none;
 }
->>>>>>> b065ae516dbf3f66b7bf6f4e1e5a42ac22580ea3
