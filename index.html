@@ -55,9 +55,108 @@
         <div class="row">
 
     </section>
-    <footer>
+    <footer class="container-fluid">
+        <div class="row footer-first-row">
+            <div class="col-md-2">
+                <div class="social-icon-container">
+                    <a href="https://www.instagram.com/shiva_nail_artt?igsh=ejd4NWlpOW54MWdl"><img src="photo/instagramIcon.png" alt=""></a>
+                    <a href=""><img src="photo/telegtamIcon.png" alt=""></a>
+                    <a href=""><img src="photo/whatsappIcon.png" alt=""></a>
+                    <a href=""><img src="photo/phoneIcon.png" alt=""></a>
+                </div>
+                <div>
+                    <p class="address-para">فردیس،کانال غربی...</p>
+                </div>
+
+
+
+
+
+
+
+            </div>
+            <div class="col-md-6 text-start">
+                <div class="email-subscribe-box">
+                    <h4 class="emailbox-para">عضویت در خبرنامه</h4>
+                    <form id="subscribeForm">
+                        <input type="email" id="emailInput" placeholder="ایمیل خود را وارد کنید" required>
+                        <button type="submit">عضویت</button>
+                        <p id="message"></p>
+                    </form>
+                </div>
+
+
+
+            </div>
+            <div class="col-md-4 text-start">
+                <h5>سالن ناخن شیوا دین‌دوست</h5>
+                <img src="photo/me.jpg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <h5>درباره ما</h5>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها ومتون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،د.</p>
+            </div>
+            <!-- <div class="col-md">
+                <h5>Shop</h5>
+                <ul>
+                    <li>Blush</li>
+                    <li>Mint</li>
+                    <li>Teal</li>
+                    <li>Mauve</li>
+                </ul>
+            </div> -->
+            <!-- <div class="col-md">
+                <h5>Explore</h5>
+                <ul>
+                    <li>Learn More</li>
+                    <li>Go Shopping</li>
+                    <li>LogIn</li>
+                </ul>
+            </div> -->
+            <div class="col-md text-start">
+                <h5>دسترسی سریع</h5>
+                <ul>
+                    <li>صفحه اصلی</li>
+                    <li>آموزش</li>
+                    <li>نمونه‌کارها</li>
+                    <li>مقالات</li>
+                </ul>
+            </div>
+            <div class="col-md text-start">
+                <a href=""><img src="photo/location.png" alt="location"></a>
+            </div>
+
+
+
+
+        </div>
 
     </footer>
 </body>
 
+
+<script>
+    document.getElementById('subscribeForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const email = document.getElementById('emailInput').value.trim();
+        const message = document.getElementById('message');
+
+        if (validateEmail(email)) {
+            message.textContent = "با موفقیت در خبرنامه عضو شدید!";
+            message.style.color = "green";
+            document.getElementById('emailInput').value = "";
+        } else {
+            message.textContent = "لطفاً یک ایمیل معتبر وارد کنید.";
+            message.style.color = "red";
+        }
+    });
+
+    function validateEmail(email) {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+</script>
 </html>
