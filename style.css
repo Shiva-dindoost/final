@@ -46,7 +46,77 @@ header {
     opacity: 1;
     transform: translateY(0);
   }
+<<<<<<< HEAD
 }
 /* .rs-graybox-para-cont{
   
 } */
+=======
+  .logo-img {
+    width: 120px;
+    height: 180px;
+    object-fit: contain;
+  }
+  /* -----------------//footer//-------------------------- */
+  .social-icon-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.address-para {
+    margin-top: 10px;
+}
+
+.emailbox-para {
+    font-size: 18px;
+    text-align: center;
+}
+
+.email-subscribe-box {
+
+    /* max-width: 400px; */
+    /* margin: 0 auto; */
+    /* padding: 20px; */
+    /* text-align: center; */
+    /* text-align: left;
+     */
+}
+
+.email-subscribe-box input[type="email"] {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.email-subscribe-box button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.email-subscribe-box button:hover {
+    background-color: #555;
+}
+
+#message {
+    margin-top: 10px;
+    font-size: 13px;
+    color: green;
+}
+
+ul li{
+  list-style-type:none;
+}
+>>>>>>> b065ae516dbf3f66b7bf6f4e1e5a42ac22580ea3
