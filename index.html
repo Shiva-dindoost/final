@@ -2,62 +2,124 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container-fluid">
+  <div class="container-fluid">
 
-        <header class=" d-flex flex-column">
-            <!-- Navbar: بالای موبایل و دسکتاپ افقی -->
-            <div class="row w-100">
-                <div class="col-12 col-md-3 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
-                    <nav>
-                        <ul class="nav flex-row flex-md-row">
-                            <li class="nav-item"><a class="nav-link" href="#">خانه</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">خدمات</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">تماس</a></li>
-                        </ul>
-                    </nav>
-                </div>
+    <header class="d-flex flex-column" style="height:700px;">
+
+      <!-- Navbar: بالای موبایل و دسکتاپ افقی -->
+      <div class="row w-100">
+        <div class="col-12 col-md-3 mb-3 mb-md-0">
+          <nav class="px-3 mt-4">
+            <ul class="nav justify-content-start gap-2">
+              <li class="nav-item flex-fill text-center">
+                <a class="nav-link py-2 w-100" href="#">خانه</a>
+              </li>
+              <li class="nav-item flex-fill text-center">
+                <a class="nav-link py-2 w-100" href="#">خدمات</a>
+              </li>
+              <li class="nav-item flex-fill text-center">
+                <a class="nav-link py-2 w-100" href="#">تماس</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
+      <div class="row flex-grow-1">
+        <div class="col-12 d-flex flex-column justify-content-center align-items-center ">
+
+          <img src="photo/Untitled-1.png" alt="لوگو" class="img-fluid" style="max-width:120px; height:auto;">
+
+
+          <p class="mt-2 mt-md-3 mb-0 text-center heder-text">سالن تخصصی ناخن</p>
+        </div>
+      </div>
+
+    </header>
+
+  </div>
+  <main class=" container-fluid">
+    <div class="row">
+      <!-- بخش راست -->
+
+      <div class="right-side col-md-6 bg-danger ">
+        <div class="row m-2 rs-gray-box" style="background-color: rgb(178, 156, 156); border-radius: 60px; ">
+
+          <div class="col-md-9 d-flex flex-column align-items-center bg-gradient py-3 ">
+            <h2> خدمات </h2>
+            <div class="mt-2 rs-graybox-para-cont">
+              <p> ارایه تمامی خدمات ناخن به صورت تخصصی</p>
+              <p>کاشت,ترمیم,لمینت,ژلیش,پدیکور</p>
+              <p>انواع طراحی هابه همراه تنوع رنگی</p>
             </div>
+          </div>
 
-            <!-- لوگو وسط هدر -->
-            <div class="row flex-grow-1">
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <img src="photo/Untitled-1.png" alt="لوگو" class="img-fluid logo-img">
-                </div>
+          <div class="col-md-3 d-flex d-flex justify-content-center">
+            <img src="photo/1cc00fee15249f2341744fd0875e8fc3.jpg" class="my-2 img-fluid "
+              style="width: 170px; height: 200px; border-radius: 50%;" alt="">
+          </div>
+
+        </div>
+
+        <div class="row rs-white-box p-3">
+          <div class="col-md-6 bg-primary">
+            <p>متن نمونه ۲</p>
+            <p>بخش دوم</p>
+            
+          </div>
+           <div class="col-md-6 d-flex flex-column align-items-end bg-secondary p-2">
+            <p > به همراه تیم مجرب</p>
+            <div class="d-flex flex-row">
+              <p>+16</p>
+            <img src="photo/Untitled-1.png" style="width: 50px; height: 50px;" alt="">
+            
             </div>
+          </div>
 
-            <!-- پاراگراف پایین هدر -->
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p>سالن تخصصی ناخن</p>
-                </div>
-            </div>
-        </header>
-
-    </div>
-
-
-
-    <main>
-        <div class="right-side"></div>
-        <div class="left-side"></div>
-    </main>
-
-    <section>
+        </div>
         <div class="row">
+          <div class="col-12">
+            <a href="">نمونه خدمات </a>
+          </div>
+        </div>
+      </div>
 
-    </section>
-    <footer>
+      <!-- بخش چپ -->
+      <div class="left-side col-md-6 bg-success">
+        <div class="row">
+          <div class="col-12 mb-3">
+            <img src="" alt="">
+            <p>متن نمونه ۱</p>
+          </div>
+          <div class="col-12">
+            <p>متن نمونه ۲</p>
+            <p>بخش دوم</p>
+            <a href="#">لینک</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    </footer>
+
+
+  <section>
+    <div class="row">
+
+  </section>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
