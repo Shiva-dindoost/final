@@ -53,18 +53,28 @@ header {
   height: 180px;
   object-fit: contain;
 }
-
+/* ---------graybox-------- */
+.gray-box{
+  background-color: rgb(202, 197, 197);
+   border-radius: 60px;
+}
+.gray-box-img{
+  width: 170px; height: 200px; border-radius: 50%;
+}
+.white-box-img{
+  width: 50px; height: 50px;
+}
+.rs-white-box{
+  border-left: 1px solid gray;
+}
 /* ----white-box----- */
 .btn-white-box {
   border-radius: 25px;
-   opacity: 0;
-  transform: translateY(20px);
-  animation: fadeSlide 0.8s ease forwards;
-  animation-delay: 0.3s;
   color: white;
   background-color: black;
   text-decoration: none;
   align-items: center;
+  
 }
 
 .btn-white-box:hover {
@@ -74,12 +84,6 @@ header {
 
 }
 
-@keyframes fadeSlide {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* -----------------//footer//-------------------------- */
 .social-icon-container {
