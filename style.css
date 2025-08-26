@@ -53,35 +53,59 @@ header {
   height: 180px;
   object-fit: contain;
 }
+
 /* ---------graybox-------- */
-.gray-box{
-  background-color: rgb(202, 197, 197);
-   border-radius: 60px;
+main {
+
+  background-image: url(photo/v960-ning-32.jpg);
+  background-size: cover;
+
 }
-.gray-box-img{
-  width: 170px; height: 200px; border-radius: 50%;
+
+.space-between {
+  border: 1px solid white;
+
 }
-.white-box-img{
-  width: 50px; height: 50px;
+
+.gray-box {
+
+  background-color: rgba(255, 255, 255, 0.3); /* شفافیت سفید */
+  backdrop-filter: blur(5px); /* بلور کردن پشت */
+  -webkit-backdrop-filter: blur(5px); /* پشتیبانی Safari */
+  border-radius: 60px; /* گوشه‌های گرد */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* خط حاشیه سبک */}
+
+
+
+
+.gray-box-img {
+  width: 170px;
+  height: 200px;
+  border-radius: 50%;
 }
-.rs-white-box{
-  border-left: 1px solid gray;
+
+.white-box-img {
+  width: 50px;
+  height: 50px;
 }
+
+.rs-white-box {
+  border-left: 1px solid white;
+}
+
 /* ----white-box----- */
 .btn-white-box {
   border-radius: 25px;
   color: white;
-  background-color: black;
+  background-color:  #780000;
   text-decoration: none;
   align-items: center;
-  
+
 }
 
 .btn-white-box:hover {
-  color: black;
-  border: 1px solid black;
-  background-color: white;
 
+  border: 1px solid #780000;
 }
 
 
