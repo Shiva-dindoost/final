@@ -1,12 +1,43 @@
 * {
   direction: rtl;
 }
-
 header {
-
+  position: relative;
   height: 700px;
-  background-image: url(photo/1cc00fee15249f2341744fd0875e8fc3.jpg);
-  background-size: cover;
+  overflow: hidden;
+}
+
+header .bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+header .content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  top: 40%;
+}
+
+/* تغییر ارتفاع روی موبایل */
+@media (max-width: 768px) {
+  header {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 300px;
+  }
 }
 
 .logo-img {
@@ -72,7 +103,7 @@ main {
   background-color: rgba(255, 255, 255, 0.3); /* شفافیت سفید */
   backdrop-filter: blur(5px); /* بلور کردن پشت */
   -webkit-backdrop-filter: blur(5px); /* پشتیبانی Safari */
-  border-radius: 60px; /* گوشه‌های گرد */
+  border-radius: 50px; /* گوشه‌های گرد */
   border: 1px solid rgba(255, 255, 255, 0.2); /* خط حاشیه سبک */}
 
 
@@ -81,7 +112,7 @@ main {
 .gray-box-img {
   width: 170px;
   height: 200px;
-  border-radius: 50%;
+  border-radius:40px;
 }
 
 .white-box-img {
@@ -94,7 +125,7 @@ main {
 }
 
 /* ----white-box----- */
-.btn-white-box {
+.service-btn{
   border-radius: 25px;
   color: white;
   background-color:  #780000;
@@ -102,11 +133,15 @@ main {
   align-items: center;
 
 }
+.education-btn{
+border-radius: 25px;
+  color: #780000;
+ border: #780000 4px solid;
+  text-decoration: none;
+  align-items: center;
 
-.btn-white-box:hover {
-
-  border: 1px solid #780000;
 }
+
 
 
 /* -----------------//footer//-------------------------- */
