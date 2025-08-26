@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+.training-container {
+    margin: 50px auto;
+    max-width: 900px;
+    border-radius: 20px;
+    background-color: #DCDCDC;
+    padding: 20px;
+}
+
+.training-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+.training-img-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.training-img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+
+}
+
+.training-para-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    overflow-wrap: break-word;
+
+}
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-1 {
+    animation-delay: 0.1s;
+}
+
+.card-2 {
+    animation-delay: 0.3s;
+}
+
+.card-3 {
+    animation-delay: 0.5s;
+}
+
+.card-4 {
+    animation-delay: 0.7s;
+}
+
+.card-5 {
+    animation-delay: 0.9s;
+}
+
+.card-6 {
+    animation-delay: 1.1s;
+}
