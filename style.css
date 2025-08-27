@@ -1,9 +1,10 @@
 * {
   direction: rtl;
 }
+
 header {
   position: relative;
-  height: 700px;
+  height: 800px;
   overflow: hidden;
 }
 
@@ -68,8 +69,8 @@ header .content {
 }
 
 .nav-link:hover {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #780000;
 }
 
 @keyframes fadeSlide {
@@ -88,36 +89,66 @@ header .content {
 /* ---------graybox-------- */
 main {
 
-  background-image: url(photo/v960-ning-32.jpg);
+  background-image: url(photo/169a036c19f6bfc426561446280eae87.jpg);
   background-size: cover;
+
+
 
 }
 
 .space-between {
-  border: 1px solid white;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
 
 }
 
-.gray-box {
 
-  background-color: rgba(255, 255, 255, 0.3); /* شفافیت سفید */
-  backdrop-filter: blur(5px); /* بلور کردن پشت */
-  -webkit-backdrop-filter: blur(5px); /* پشتیبانی Safari */
-  border-radius: 50px; /* گوشه‌های گرد */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* خط حاشیه سبک */}
+.gray-box {
+  border: 1px solid white;
+  border-radius: 40PX;
+
+}
 
 
 
 
 .gray-box-img {
-  width: 170px;
+  width: 200px;
   height: 200px;
-  border-radius:40px;
+  border-radius: 40px;
 }
 
-.white-box-img {
-  width: 50px;
-  height: 50px;
+.white-box-img-1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.white-box-img-2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  right: 80px;
+}
+
+.white-box-colors-1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #abaeb0;
+}
+
+.white-box-colors-2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  right: 80px;
+  background-color: #780000;
 }
 
 .rs-white-box {
@@ -125,24 +156,41 @@ main {
 }
 
 /* ----white-box----- */
-.service-btn{
+
+
+
+.service-btn {
   border-radius: 25px;
   color: white;
-  background-color:  #780000;
   text-decoration: none;
   align-items: center;
-
-}
-.education-btn{
-border-radius: 25px;
-  color: #780000;
- border: #780000 4px solid;
-  text-decoration: none;
-  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 10px 100px;
 
 }
 
+.education-btn {
+  color: white;
+  background-color: #780000;
+  padding: 10px 100px;
+  text-decoration: none;
+  align-items: center;
+  border-radius: 25px;
+}
 
+.education-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: white;
+}
+
+.service-btn:hover {
+  color: white;
+  background-color: #780000;
+}
 
 /* -----------------//footer//-------------------------- */
 .social-icon-container {
