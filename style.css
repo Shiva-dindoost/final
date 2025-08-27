@@ -332,6 +332,21 @@ background: linear-gradient(
 .footer-section {
   /* margin-top: 40px; */
   box-shadow: 0px 0px 8px 0px #cccccc;
+  background: linear-gradient(
+  90deg,
+  rgba(255, 250, 240, 0.6) 0%,   /* روشن‌ترین کرم */
+  rgba(245, 235, 220, 0.5) 25%,  /* کرم روشن قبلی */
+  rgba(220, 220, 220, 0.3) 45%,  /* روشن‌تر و کمرنگ‌تر */
+  rgba(150, 150, 150, 0.3) 65%,  /* طوسی کمتر و محدودتر */
+  rgba(80, 80, 80, 0.2) 80%,     /* تیره کمرنگ‌تر */
+  transparent 90%                 /* بقیه فضا روشن بمونه */
+),
+#d7ccba;
+
+
+
+
+
 }
 .footer-first-row{
   margin-top: 10px;
