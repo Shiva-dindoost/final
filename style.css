@@ -88,13 +88,22 @@ header .content {
 
 /* ---------graybox-------- */
 main {
+background: linear-gradient(
+  90deg,
+  rgba(255, 250, 240, 0.6) 0%,   /* روشن‌ترین کرم */
+  rgba(245, 235, 220, 0.5) 25%,  /* کرم روشن قبلی */
+  rgba(220, 220, 220, 0.3) 45%,  /* روشن‌تر و کمرنگ‌تر */
+  rgba(150, 150, 150, 0.3) 65%,  /* طوسی کمتر و محدودتر */
+  rgba(80, 80, 80, 0.2) 80%,     /* تیره کمرنگ‌تر */
+  transparent 90%                 /* بقیه فضا روشن بمونه */
+),
+#d7ccba;
 
-  background-image: url(photo/169a036c19f6bfc426561446280eae87.jpg);
-  background-size: cover;
 
 
 
 }
+
 
 .space-between {
 
@@ -104,17 +113,17 @@ main {
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
+  font-size: 17px;
+  font-weight: bold;
 
 }
 
 
 .gray-box {
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 40PX;
 
 }
-
-
 
 
 .gray-box-img {
@@ -150,9 +159,12 @@ main {
   right: 80px;
   background-color: #780000;
 }
-
+.photo-number{
+  color: #780000;
+  font-size: 18px;
+}
 .rs-white-box {
-  border-left: 1px solid white;
+  border-left: 2px solid white;
 }
 
 /* ----white-box----- */

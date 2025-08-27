@@ -5,6 +5,91 @@
     padding: 0;
 }
 
+header {
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+  background-image: url(photo/660e872fb3572fc6d4ffae485aedfb41.jpg);
+  background-size: cover;
+}
+
+header .bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+header .content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  top: 40%;
+}
+
+/* تغییر ارتفاع روی موبایل */
+@media (max-width: 768px) {
+  header {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 300px;
+  }
+}
+
+.logo-img {
+  width: 120px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.heder-text {
+  color: #780000;
+  font-size: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 0.8s ease forwards;
+  animation-delay: 0.3s;
+
+}
+
+.nav-link {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 0.8s ease forwards;
+  animation-delay: 0.3s;
+  color: #780000;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: #780000;
+}
+
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-img {
+  width: 120px;
+  height: 180px;
+  object-fit: contain;
+}
 .training-container {
     margin: auto;
     padding-inline: 30px;
