@@ -5,6 +5,91 @@
     padding: 0;
 }
 
+header {
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+  background-image: url(photo/660e872fb3572fc6d4ffae485aedfb41.jpg);
+  background-size: cover;
+}
+
+header .bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+header .content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  top: 40%;
+}
+
+/* تغییر ارتفاع روی موبایل */
+@media (max-width: 768px) {
+  header {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 300px;
+  }
+}
+
+.logo-img {
+  width: 120px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.heder-text {
+  color: #780000;
+  font-size: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 0.8s ease forwards;
+  animation-delay: 0.3s;
+
+}
+
+.nav-link {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 0.8s ease forwards;
+  animation-delay: 0.3s;
+  color: #780000;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: #780000;
+}
+
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-img {
+  width: 120px;
+  height: 180px;
+  object-fit: contain;
+}
 .training-container {
     margin: auto;
     padding-inline: 30px;
@@ -56,7 +141,8 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(50, 50, 50, 0.45);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.3);
     color: #fff;
     padding: 10px;
     margin-bottom: 10px;
@@ -64,8 +150,12 @@
     overflow-wrap: break-word;
 
 }
-
-
+.training-h2{
+    font-size: 12px;
+}
+.training-para{
+    font-size: 10px;
+}
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -101,3 +191,107 @@
 .card-6 {
     animation-delay: 1.1s;
 }
+
+/* -------------------//footer//--------------------------- */
+.footer-section {
+    /* margin-top: 40px; */
+    box-shadow: 0px 0px 8px 0px #cccccc;
+  }
+  .footer-first-row{
+    margin-top: 10px;
+    padding-top: 50px;
+  }
+  .social-icon-container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 225px;
+    justify-content: space-between;
+  }
+  
+  @media(max-width:768px) {
+    .social-icon-container {
+      margin: 0px auto;
+      /* margin-top: 10px; */
+    }
+  }
+  
+  .social-media-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .address-para {
+    margin-top: 10px;
+  }
+  
+  .emailbox-para {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  /* .email-subscribe-box {
+  
+     max-width: 400px; 
+     margin: 0 auto; 
+     padding: 20px; 
+     text-align: center; 
+     text-align: left;
+       
+  } */
+  
+  .email-subscribe-box input[type="email"] {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .email-subscribe-box button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .email-subscribe-box button:hover {
+    background-color: #555;
+  }
+  
+  #message {
+    margin-top: 10px;
+    font-size: 13px;
+    color: green;
+  }
+  
+  ul li {
+    list-style-type: none;
+  }
+  .email-btn{
+    background-color: #780000 !important;
+  }
+  .email-btn:hover{
+    background-color: #555;
+  }
+  .logo-img{
+    width: 120px;
+    height: 180px;
+    object-fit: contain;
+  }
+  .location-img {
+    width: 250px;
+    height: 200px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-first-row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+  }
