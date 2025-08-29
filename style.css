@@ -256,6 +256,82 @@ color:#780000;
 /* ////////////////////services///////////////////////////// */
 
 
+  .collage {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr); /* چیدمان ثابت تا 900px */
+      grid-auto-rows: 260px;
+      grid-auto-flow: dense;
+      gap: 14px;
+      padding: 32px;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .item {
+      background-size: cover;
+      background-position: center;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .item::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0);
+      transition: background 0.3s ease;
+      z-index: 1;
+      border-radius: 14px;
+    }
+
+    .item:hover::after {
+      background: rgba(0, 0, 0, 0.50); /* تیرگی ملایم هنگام هاور */
+    }
+
+    .item:hover {
+      transform: scale(1.03);
+    }
+
+    .tall {
+      grid-row: span 2;
+    }
+
+    .wide {
+      grid-column: span 2;
+    }
+
+    .square {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    /* تغییر چیدمان از عرض 900px به پایین */
+    @media (max-width: 900px) {
+      .collage {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 260px; /* حفظ ارتفاع آیتم‌ها */
+        gap: 10px;
+        padding: 20px;
+      }
+
+      .tall {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      .wide {
+        grid-column: span 4;
+        grid-row: span 1;
+      }
+
+      .square {
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+    }
 
 
 
