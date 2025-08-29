@@ -49,12 +49,30 @@ header .content {
 
 .heder-text {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeSlide 0.8s ease forwards;
   animation-delay: 0.3s;
+  font-weight: bolder;
+}
 
+.nav-link-home {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #780000 !important;
+  text-decoration: none !important;
+  border-radius: 25px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 0.8s ease forwards !important;
+  animation-delay: 0.3s !important;
+}
+
+.nav-link-home:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3) !important;
 }
 
 .nav-link {
@@ -88,19 +106,33 @@ header .content {
 
 /* ---------graybox-------- */
 main {
-background: linear-gradient(
+  /* background: linear-gradient(
   90deg,
-  rgba(255, 250, 240, 0.6) 0%,   /* روشن‌ترین کرم */
-  rgba(245, 235, 220, 0.5) 25%,  /* کرم روشن قبلی */
-  rgba(220, 220, 220, 0.3) 45%,  /* روشن‌تر و کمرنگ‌تر */
-  rgba(150, 150, 150, 0.3) 65%,  /* طوسی کمتر و محدودتر */
-  rgba(80, 80, 80, 0.2) 80%,     /* تیره کمرنگ‌تر */
-  transparent 90%                 /* بقیه فضا روشن بمونه */
+  rgba(255, 250, 240, 0.8) 0%,   
+  rgba(245, 235, 220, 0.7) 25%,  
+  rgba(220, 220, 220, 0.5) 50%,  
+  rgba(150, 150, 150, 0.3) 75%,  
+  rgba(80, 80, 80, 0.2) 100%     
 ),
-#d7ccba;
+#d7ccba; */
+  /* 
+background:
+  
+  linear-gradient(
+    90deg,
+    
+    rgba(255, 250, 240, 0.8) 0%,  
+    rgba(245, 235, 220, 0.7) 25%,  
+    rgba(220, 220, 220, 0.673) 50%,  
+    rgba(150, 150, 150, 0.455) 75%,  
+    rgba(80, 80, 80, 0.2) 100%     
+  ),
+  #d7ccba;
 
-
-
+/* */
+ background-image: url(photo/169a036c19f6bfc426561446280eae87.jpg);
+  background-size: contain;
+  background-position: center;
 
 }
 
@@ -112,9 +144,10 @@ background: linear-gradient(
   -webkit-backdrop-filter: blur(5px);
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
+  color: #746b63;
   font-size: 17px;
   font-weight: bold;
+ 
 
 }
 
@@ -125,12 +158,24 @@ background: linear-gradient(
 
 }
 
+h2 {
+  
+color:#780000;
+
+}
+ 
+.graybox-para-cont {
+  line-height: 15px;
+  
+}
 
 .gray-box-img {
   width: 200px;
   height: 200px;
   border-radius: 40px;
 }
+
+/* ----white-box----- */
 
 .white-box-img-1 {
   width: 80px;
@@ -159,29 +204,35 @@ background: linear-gradient(
   right: 80px;
   background-color: #780000;
 }
-.photo-number{
+
+.photo-number {
   color: #780000;
   font-size: 18px;
 }
+
 .rs-white-box {
   border-left: 2px solid white;
 }
 
-/* ----white-box----- */
-
-
 
 .service-btn {
   border-radius: 25px;
-  color: white;
+  color: #780000;
   text-decoration: none;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   padding: 10px 100px;
+  border: 2px solid #780000;
 
 }
+
+.service-btn:hover {
+  color: white;
+  background-color: #780000;
+}
+
 
 .education-btn {
   color: white;
@@ -190,18 +241,16 @@ background: linear-gradient(
   text-decoration: none;
   align-items: center;
   border-radius: 25px;
+   border: 2px solid #780000;
 }
+
 
 .education-btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  color: white;
-}
-
-.service-btn:hover {
-  color: white;
-  background-color: #780000;
+  color: #780000;
+  border: 2px solid #780000;
 }
 
 /* ////////////////////services///////////////////////////// */
@@ -332,26 +381,33 @@ background: linear-gradient(
 .footer-section {
   /* margin-top: 40px; */
   box-shadow: 0px 0px 8px 0px #cccccc;
-  background: linear-gradient(
-  90deg,
-  rgba(255, 250, 240, 0.6) 0%,   /* روشن‌ترین کرم */
-  rgba(245, 235, 220, 0.5) 25%,  /* کرم روشن قبلی */
-  rgba(220, 220, 220, 0.3) 45%,  /* روشن‌تر و کمرنگ‌تر */
-  rgba(150, 150, 150, 0.3) 65%,  /* طوسی کمتر و محدودتر */
-  rgba(80, 80, 80, 0.2) 80%,     /* تیره کمرنگ‌تر */
-  transparent 90%                 /* بقیه فضا روشن بمونه */
-),
-#d7ccba;
+  background: linear-gradient(90deg,
+      rgba(255, 250, 240, 0.6) 0%,
+      /* روشن‌ترین کرم */
+      rgba(245, 235, 220, 0.5) 25%,
+      /* کرم روشن قبلی */
+      rgba(220, 220, 220, 0.3) 45%,
+      /* روشن‌تر و کمرنگ‌تر */
+      rgba(150, 150, 150, 0.3) 65%,
+      /* طوسی کمتر و محدودتر */
+      rgba(80, 80, 80, 0.2) 80%,
+      /* تیره کمرنگ‌تر */
+      transparent 90%
+      /* بقیه فضا روشن بمونه */
+    ),
+    #d7ccba;
 
 
 
 
 
 }
-.footer-first-row{
+
+.footer-first-row {
   margin-top: 10px;
   padding-top: 50px;
 }
+
 .social-icon-container {
   display: flex;
   margin: 0;
@@ -419,12 +475,15 @@ background: linear-gradient(
   font-size: 13px;
   color: green;
 }
-.email-btn{
+
+.email-btn {
   background-color: #780000 !important;
 }
-.email-btn:hover{
+
+.email-btn:hover {
   transition: transform 0.6s ease, box-shadow 0.6s ease !important;
 }
+
 ul li {
   list-style-type: none;
 }
