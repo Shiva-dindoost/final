@@ -258,33 +258,6 @@ color:#780000;
 
 
 
-.masonry {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -5px;
-}
-
-.masonry-item {
-  width: calc(25% - 10px);
-  margin: 5px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-
-
-@media (max-width: 768px) {
-  .masonry-item {
-    width: calc(50% - 10px);
-  }
-}
-
-@media (max-width: 480px) {
-  .masonry-item {
-    width: 100%;
-  }
-}
-
 
 #goTopBtn {
   position: fixed;
