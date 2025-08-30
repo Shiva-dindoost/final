@@ -532,7 +532,11 @@ h2 {
 ul li {
   list-style-type: none;
 }
-
+.access-section{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .access-h6{
   text-align: right !important;
 }
@@ -548,6 +552,7 @@ ul li {
 .location-img {
   width: 250px;
   height: 200px;
+  border-radius: 25px;
 }
 .copyright{
   background-color: #616161;
