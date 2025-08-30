@@ -444,33 +444,28 @@ h2 {
 
 /* -----------------//footer//-------------------------- */
 .footer-section {
-  /* margin-top: 40px; */
   box-shadow: 0px 0px 8px 0px #cccccc;
   background: linear-gradient(90deg,
-      rgba(255, 250, 240, 0.6) 0%,
-      /* روشن‌ترین کرم */
-      rgba(245, 235, 220, 0.5) 25%,
-      /* کرم روشن قبلی */
-      rgba(220, 220, 220, 0.3) 45%,
-      /* روشن‌تر و کمرنگ‌تر */
-      rgba(150, 150, 150, 0.3) 65%,
-      /* طوسی کمتر و محدودتر */
-      rgba(80, 80, 80, 0.2) 80%,
-      /* تیره کمرنگ‌تر */
-      transparent 90%
-      /* بقیه فضا روشن بمونه */
-    ),
-    #d7ccba;
-
-
-
-
-
+          rgba(255, 250, 240, 0.6) 0%,
+          /* روشن‌ترین کرم */
+          rgba(245, 235, 220, 0.5) 25%,
+          /* کرم روشن قبلی */
+          rgba(220, 220, 220, 0.3) 45%,
+          /* روشن‌تر و کمرنگ‌تر */
+          rgba(150, 150, 150, 0.3) 65%,
+          /* طوسی کمتر و محدودتر */
+          rgba(80, 80, 80, 0.2) 80%,
+          /* تیره کمرنگ‌تر */
+          transparent 90%
+          /* بقیه فضا روشن بمونه */
+      ),
+      #d7ccba;
 }
 
 .footer-first-row {
   margin-top: 10px;
   padding-top: 50px;
+  display: flex;
 }
 
 .social-icon-container {
@@ -483,34 +478,32 @@ h2 {
 
 @media(max-width:768px) {
   .social-icon-container {
-    margin: 0px auto;
-    /* margin-top: 10px; */
+      margin: 0px auto;
+      /* margin-top: 10px; */
   }
 }
 
 .social-media-icon {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 }
 
-.address-para {
-  margin-top: 10px;
+.logo-img {
+  width: 120px;
+  height: 180px;
+  object-fit: contain;
 }
 
-.emailbox-para {
-  font-size: 18px;
+
+.email-subscribe-box {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.email-subscribe-box h6 {
   text-align: center;
+  margin-left: 10px;
 }
-
-/* .email-subscribe-box {
-
-   max-width: 400px; 
-   margin: 0 auto; 
-   padding: 20px; 
-   text-align: center; 
-   text-align: left;
-     
-} */
 
 .email-subscribe-box input[type="email"] {
   width: 50%;
@@ -521,47 +514,66 @@ h2 {
   font-size: 14px;
 }
 
-.email-subscribe-box button {
+.email-btn {
   padding: 10px 20px;
   border: none;
-  background-color: #333;
+  background-color: #780000;
   color: #fff;
   border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
 }
 
-.email-subscribe-box button:hover {
-  background-color: #555;
-}
-
-#message {
-  margin-top: 10px;
-  font-size: 13px;
-  color: green;
-}
-
-.email-btn {
-  background-color: #780000 !important;
-}
-
-.email-btn:hover {
-  transition: transform 0.6s ease, box-shadow 0.6s ease !important;
+.email-btn:hover{
+  background-color: #78000079;
+  
 }
 
 ul li {
   list-style-type: none;
 }
 
+.access-h6{
+  text-align: right !important;
+}
+.access-ul{
+  
+  text-align: right !important;
+  
+}
+.access-li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
 .location-img {
   width: 250px;
   height: 200px;
 }
-
-@media (max-width: 768px) {
-  .footer-first-row {
-    flex-direction: column;
-    text-align: center;
+.copyright{
+  background-color: #616161;
+  color: #ffffff;
+  text-align: center;
+  line-height: 57px
+}
+@media (max-width:768px){
+  .footer-first-row{
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  .access-h6 {
+      text-align: center !important;
+    }
+  
+    .access-ul {
+      list-style: none;
+      padding: 0;
+      text-align: center !important;
+    }
+  
+  .location-section{
+      align-items: center !important;
   }
 
 }
