@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Mj_Beirut';
+    src: url('Mj_Beirut.woff2') format('woff2'),
+        url('Mj_Beirut.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

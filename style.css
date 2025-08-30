@@ -2,6 +2,22 @@
   direction: rtl;
 }
 
+@font-face {
+  font-family: 'Mj_Beirut';
+  src: url('fonts/Mj_Beirut.woff2') format('woff2'),
+    url('fonts/Mj_Beirut.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Mj_Beirut', Arial, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   position: relative;
   height: 800px;
@@ -130,7 +146,7 @@ background:
   #d7ccba;
 
 /* */
- background-image: url(photo/169a036c19f6bfc426561446280eae87.jpg);
+  background-image: url(photo/169a036c19f6bfc426561446280eae87.jpg);
   background-size: contain;
   background-position: center;
 
@@ -147,7 +163,7 @@ background:
   color: #746b63;
   font-size: 17px;
   font-weight: bold;
- 
+
 
 }
 
@@ -159,14 +175,14 @@ background:
 }
 
 h2 {
-  
-color:#780000;
+
+  color: #780000;
 
 }
- 
+
 .graybox-para-cont {
   line-height: 15px;
-  
+
 }
 
 .gray-box-img {
@@ -241,7 +257,7 @@ color:#780000;
   text-decoration: none;
   align-items: center;
   border-radius: 25px;
-   border: 2px solid #780000;
+  border: 2px solid #780000;
 }
 
 
