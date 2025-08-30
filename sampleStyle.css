@@ -31,10 +31,11 @@ header {
   transform: translateY(20px);
   animation: fadeSlide 0.8s ease forwards;
   animation-delay: 0.3s;
-  color: white;
+  color:  #780000;
   backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 25px;
+  border: 2px solid #780000;
 }
 
 .nav-link:hover {
@@ -49,16 +50,25 @@ header {
   }
 }
 
-.logo-img {
-  width: 120px;
-  height: 180px;
-  object-fit: contain;
-}
 
 img {
   border-radius: 25px;
 }
+.heder-text{
+width: 100%;
+height: 275px;
+background-color:white;  
+ border-radius: 25px;
+}
+h1{
+  color: #780000;
+}
+.heder-text-para{
+  color:  #746b63;
+    font-size: 22px;
+  font-weight: bold;
 
+}
 .training-container {
   margin: auto;
   padding-inline: 30px;
