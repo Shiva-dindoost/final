@@ -73,6 +73,7 @@ header .content {
   animation: fadeSlide 0.8s ease forwards;
   animation-delay: 0.3s;
   font-weight: bolder;
+
 }
 
 .nav-link-home {
@@ -578,3 +579,5 @@ ul li {
   }
 
 }
+
+

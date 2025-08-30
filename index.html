@@ -67,7 +67,7 @@
           <img src="photo/Untitled-1.png" alt="لوگو" class="img-fluid" style="max-width:120px; height:auto;">
 
 
-          <h1 class="mt-2 mt-md-3 mb-0 text-center heder-text">سالن تخصصی ناخن</h1>
+          <h1 class="mt-2 mt-md-3 mb-0 text-center heder-text" >سالن تخصصی ناخن</h1>
         </div>
       </div>
 
@@ -183,12 +183,12 @@
 </div>
   <!-- دکمه Go to Top -->
   <button id="goTopBtn" title="برو بالا">↑</button>
-<<<<<<< HEAD
+
   <footer id="footer" class="container-fluid footer-section">
-=======
+
   <!-- ------------footer--------- -->
   <footer class="container-fluid footer-section">
->>>>>>> 1f9be0103cfc5479f72631bb06d4bb98c2341f35
+
     <div class="row footer-first-row">
         <div class="col-md-2">
             <h6 class="contact-h6">راه‌های ارتباطی</h6>
@@ -239,66 +239,9 @@
 <div class="container-fluid copyright">
     <p>کلیه حقوق این سایت متعلق به پروژه دانشجویی است</p>
 </div>
-  
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="java script/main.js"></script>
 
-
-
-  <script>
-    AOS.init({
-      duration: 1000,
-      once: true,
-      mirror: false
-    });
-
-    document.getElementById('subscribeForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      const email = document.getElementById('emailInput').value.trim();
-      const message = document.getElementById('message');
-
-      if (validateEmail(email)) {
-        message.textContent = "با موفقیت در خبرنامه عضو شدید!";
-        message.style.color = "green";
-        document.getElementById('emailInput').value = "";
-      } else {
-        message.textContent = "لطفاً یک ایمیل معتبر وارد کنید.";
-        message.style.color = "red";
-      }
-    });
-
-    function validateEmail(email) {
-      const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return regex.test(email);
-    }
-
-
-
-
-
-
-
-
-    const goTopBtn = document.getElementById("goTopBtn");
-
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 300) {
-        goTopBtn.classList.add("show");
-      } else {
-        goTopBtn.classList.remove("show");
-      }
-    });
-
-    goTopBtn.addEventListener("click", () => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    });
-
-
-  </script>
 
 </html>
