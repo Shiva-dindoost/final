@@ -14,6 +14,7 @@
 body {
   font-family: 'Mj_Beirut', Arial, sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -22,6 +23,7 @@ header {
   position: relative;
   height: 800px;
   overflow: hidden;
+  width: 100%;
 }
 
 header .bg-video {
@@ -84,11 +86,14 @@ header .content {
   transform: translateY(20px);
   animation: fadeSlide 0.8s ease forwards !important;
   animation-delay: 0.3s !important;
+  border: 2px solid #780000;
+
 }
 
 .nav-link-home:hover {
   color: white;
   background-color: rgba(255, 255, 255, 0.3) !important;
+  border: 2px solid white;
 }
 
 .nav-link {
@@ -100,11 +105,13 @@ header .content {
   backdrop-filter: blur(5px);
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 25px;
+  border: 2px solid white;
 }
 
 .nav-link:hover {
   color: white;
   background-color: #780000;
+  border: 2px solid #780000;
 }
 
 @keyframes fadeSlide {
@@ -122,34 +129,22 @@ header .content {
 
 /* ---------graybox-------- */
 main {
-  /* background: linear-gradient(
-  90deg,
-  rgba(255, 250, 240, 0.8) 0%,   
-  rgba(245, 235, 220, 0.7) 25%,  
-  rgba(220, 220, 220, 0.5) 50%,  
-  rgba(150, 150, 150, 0.3) 75%,  
-  rgba(80, 80, 80, 0.2) 100%     
-),
-#d7ccba; */
-  /* 
-background:
   
-  linear-gradient(
-    90deg,
-    
-    rgba(255, 250, 240, 0.8) 0%,  
-    rgba(245, 235, 220, 0.7) 25%,  
-    rgba(220, 220, 220, 0.673) 50%,  
-    rgba(150, 150, 150, 0.455) 75%,  
-    rgba(80, 80, 80, 0.2) 100%     
-  ),
-  #d7ccba;
-
-/* */
-  background-image: url(photo/169a036c19f6bfc426561446280eae87.jpg);
-  background-size: contain;
-  background-position: center;
-
+ background: linear-gradient(90deg,
+      rgba(255, 250, 240, 0.6) 0%,
+      /* روشن‌ترین کرم */
+      rgba(245, 235, 220, 0.5) 25%,
+      /* کرم روشن قبلی */
+      rgba(220, 220, 220, 0.3) 45%,
+      /* روشن‌تر و کمرنگ‌تر */
+      rgba(150, 150, 150, 0.3) 65%,
+      /* طوسی کمتر و محدودتر */
+      rgba(80, 80, 80, 0.2) 80%,
+      /* تیره کمرنگ‌تر */
+      transparent 90%
+      /* بقیه فضا روشن بمونه */
+    ),
+    #d7ccba;
 }
 
 
@@ -175,9 +170,7 @@ background:
 }
 
 h2 {
-
   color: #780000;
-
 }
 
 .graybox-para-cont {
@@ -272,82 +265,85 @@ h2 {
 /* ////////////////////services///////////////////////////// */
 
 
+.collage {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* چیدمان ثابت تا 900px */
+  grid-auto-rows: 260px;
+  grid-auto-flow: dense;
+  gap: 14px;
+  padding: 32px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.item {
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease;
+  z-index: 1;
+  border-radius: 14px;
+}
+
+.item:hover::after {
+  background: rgba(0, 0, 0, 0.50);
+  /* تیرگی ملایم هنگام هاور */
+}
+
+.item:hover {
+  transform: scale(1.03);
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.square {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* تغییر چیدمان از عرض 900px به پایین */
+@media (max-width: 900px) {
   .collage {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr); /* چیدمان ثابت تا 900px */
-      grid-auto-rows: 260px;
-      grid-auto-flow: dense;
-      gap: 14px;
-      padding: 32px;
-      max-width: 1400px;
-      margin: auto;
-    }
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 260px;
+    /* حفظ ارتفاع آیتم‌ها */
+    gap: 10px;
+    padding: 20px;
+  }
 
-    .item {
-      background-size: cover;
-      background-position: center;
-      border-radius: 14px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-      position: relative;
-      overflow: hidden;
-    }
+  .tall {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
 
-    .item::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0);
-      transition: background 0.3s ease;
-      z-index: 1;
-      border-radius: 14px;
-    }
+  .wide {
+    grid-column: span 4;
+    grid-row: span 1;
+  }
 
-    .item:hover::after {
-      background: rgba(0, 0, 0, 0.50); /* تیرگی ملایم هنگام هاور */
-    }
-
-    .item:hover {
-      transform: scale(1.03);
-    }
-
-    .tall {
-      grid-row: span 2;
-    }
-
-    .wide {
-      grid-column: span 2;
-    }
-
-    .square {
-      grid-column: span 1;
-      grid-row: span 1;
-    }
-
-    /* تغییر چیدمان از عرض 900px به پایین */
-    @media (max-width: 900px) {
-      .collage {
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: 260px; /* حفظ ارتفاع آیتم‌ها */
-        gap: 10px;
-        padding: 20px;
-      }
-
-      .tall {
-        grid-column: span 2;
-        grid-row: span 2;
-      }
-
-      .wide {
-        grid-column: span 4;
-        grid-row: span 1;
-      }
-
-      .square {
-        grid-column: span 2;
-        grid-row: span 1;
-      }
-    }
+  .square {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
 
 
 
