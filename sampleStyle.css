@@ -301,7 +301,13 @@ h1{
   padding-top: 50px;
   display: flex;
 }
-
+.aboutUs-section{
+  margin-top: 50px;
+}
+.footer-h6{
+  font-size: 20px !important;
+  color: #780000;
+}
 .social-icon-container {
   display: flex;
   margin: 0;
