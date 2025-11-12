@@ -20,7 +20,8 @@ body {
 
 header {
 
-  height: 800px;
+  /* height: 800px; */
+  height: 100vh;
   overflow: hidden;
 
 }

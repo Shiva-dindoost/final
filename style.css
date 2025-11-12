@@ -1,5 +1,6 @@
 * {
   direction: rtl;
+  margin: 0;
 }
 
 @font-face {
@@ -13,6 +14,8 @@
 
 body {
   font-family: 'Mj_Beirut', Arial, sans-serif;
+  
+   
 }
 
 html {
@@ -20,8 +23,13 @@ html {
 }
 
 header {
+  /* background-image: url(photo/MVI_8386.gif);
+  background-size: cover;
+  background-position: center;  
+  background-repeat: no-repeat; */
   position: relative;
   height: 800px;
+  height: 100vh;
   overflow: hidden;
   width: 100%;
 }
@@ -30,7 +38,7 @@ header .bg-video {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
+  width: 100% !important;
   height: 100%;
   transform: translate(-50%, -50%);
   object-fit: cover;
@@ -130,22 +138,23 @@ header .content {
 
 /* ---------graybox-------- */
 main {
-  
- background: linear-gradient(90deg,
+
+  background: linear-gradient(90deg,
       rgba(255, 250, 240, 0.6) 0%,
-      /* روشن‌ترین کرم */
+ 
       rgba(245, 235, 220, 0.5) 25%,
-      /* کرم روشن قبلی */
+    
       rgba(220, 220, 220, 0.3) 45%,
-      /* روشن‌تر و کمرنگ‌تر */
+     
       rgba(150, 150, 150, 0.3) 65%,
-      /* طوسی کمتر و محدودتر */
+     
       rgba(80, 80, 80, 0.2) 80%,
-      /* تیره کمرنگ‌تر */
+      
       transparent 90%
-      /* بقیه فضا روشن بمونه */
+     
     ),
     #d7ccba;
+   
 }
 
 
@@ -156,7 +165,8 @@ main {
   -webkit-backdrop-filter: blur(5px);
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #746b63;
+  color: #202020;
+ 
   font-size: 17px;
   font-weight: bold;
 
@@ -227,7 +237,7 @@ h2 {
 
 .service-btn {
   border-radius: 25px;
-  color: #780000;
+  color:#780000;
   text-decoration: none;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
@@ -261,6 +271,246 @@ h2 {
   -webkit-backdrop-filter: blur(5px);
   color: #780000;
   border: 2px solid #780000;
+}
+
+
+
+.rol-box-1 {
+ background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+   border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  width: 100%;
+  height: 200px;
+}
+
+.rol-box-1 div {
+  width: 100%;
+  height: 190px;
+  border-bottom-right-radius: 80px;
+  border-bottom: 3px solid #640d14;
+
+}
+
+.rol-box-1-para {
+  color:#640d14;
+  font-size: 35px;
+}
+
+.rol-box-2 {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+   border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  width: 100%;
+  height: 200px;
+}
+
+.rol-box-2 div {
+  width: 100%;
+  height: 190px;
+  border-top-left-radius: 80px;
+  border: 3px solid #640d14;
+  border-bottom-right-radius: 80px;
+  padding-left: 20px;
+
+}
+
+.rol-box-2-para {
+   color:#640d14;
+  font-size: 35px;
+}
+
+.rol-box-3 {
+
+  /* background-color:rgba(190, 171, 142, 0.5); */
+   background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+   border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  width: 100%;
+  height: 200px;
+  
+}
+
+.rol-box-3 div {
+  width: 100%;
+  height: 190px;
+  border-bottom-left-radius: 80px;
+  border-bottom: 3px solid #640d14;
+
+}
+
+.rol-box-3-para {
+  color:#640d14;
+  font-size: 35px;
+}
+
+.rol-box-4 {
+   background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+   border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+
+}
+
+.rol-box-4 div {
+  width: 100%;
+  height: 200px;
+  border-bottom: none;
+  border-top: 3px solid #640d14;
+  border-right: 3px solid  #640d14;
+  border-left: 3px solid  #640d14;
+  border-top-left-radius: 70px;
+
+}
+
+.rol-box-4-para {
+   color:#640d14;
+  font-size: 35px;
+}
+
+/* فقط برای حالت موبایل (کوچکتر از 768px) */
+@media (max-width: 767.98px) {
+  .box-col {
+    padding: 18px;
+    /* فاصله از بالا، پایین، چپ و راست بین باکس‌ها */
+  }
+}
+
+.conteiner-rol-pic {
+
+  height: auto;
+}
+
+.rol-pic1 img {
+  width: 350px;
+  height: 400px;
+  border-radius: 15px;
+}
+
+.rol-pic-2-back {
+  width: 350px;
+  height: 400px;
+  background-color: #640d14;
+  border-radius: 15px;
+
+}
+
+.rol-pic-2-border {
+  border: 2px solid white;
+  width: 340px;
+  height: 390px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+
+.rol-pic-2-img-1 {
+
+  height: 100px;
+  max-width: 190px;
+  top: 32%;
+
+}
+
+.rol-pic-2-img-2 {
+
+  height: 200px;
+  max-width: 300px;
+  top: 30%;
+
+}
+
+.rol-pic3 img {
+  width: 350px;
+  height: 400px;
+  border-radius: 15px;
+}
+
+
+
+
+
+
+.about {
+  background-color: #640d14;
+  height: 600px;
+  position: relative;
+  /* اضافه شود */
+}
+
+.about-img {
+  height: 300px;
+  width: 550px;
+}
+
+.about-para {
+  right: 13%;
+  top: 55%;
+  max-width: 420px;
+
+  text-align: justify;
+  /* برای منظم کردن دو طرف متن */
+  text-justify: inter-word;
+  /* توزیع فاصله بین کلمات */
+  line-height: 1.9;
+  /* ارتفاع خط مناسب */
+  direction: rtl;
+  /* برای فارسی */
+
+}
+
+.about-img-2 {
+  left: 25%;
+  top: 20%;
+  max-width: 220px;
+}
+
+.about-img-3 {
+  left: 27%;
+  top: 32%;
+  max-width: 220px;
+}
+
+.about {
+  position: relative;
+  background-color: #640d14;
+}
+
+@media (max-width: 768px) {
+  .about-para {
+    position: absolute;
+
+    top: 65%;
+    left: 8%;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .about-img {
+    position: absolute;
+    top: 5%;
+    /* تصویر بالاتر */
+    right: 10%;
+    width: 48%;
+  }
+
+  .about-img-2 {
+    position: absolute;
+    top: 7%;
+    left: 10%;
+
+  }
+
+  .about-img-3 {
+    position: absolute;
+    top: 19%;
+    left: 13%;
+  }
 }
 
 /* ////////////////////services///////////////////////////// */
@@ -443,20 +693,20 @@ h2 {
 .footer-section {
   box-shadow: 0px 0px 8px 0px #cccccc;
   background: linear-gradient(90deg,
-          rgba(255, 250, 240, 0.6) 0%,
-          /* روشن‌ترین کرم */
-          rgba(245, 235, 220, 0.5) 25%,
-          /* کرم روشن قبلی */
-          rgba(220, 220, 220, 0.3) 45%,
-          /* روشن‌تر و کمرنگ‌تر */
-          rgba(150, 150, 150, 0.3) 65%,
-          /* طوسی کمتر و محدودتر */
-          rgba(80, 80, 80, 0.2) 80%,
-          /* تیره کمرنگ‌تر */
-          transparent 90%
-          /* بقیه فضا روشن بمونه */
-      ),
-      #d7ccba;
+      rgba(255, 250, 240, 0.6) 0%,
+      /* روشن‌ترین کرم */
+      rgba(245, 235, 220, 0.5) 25%,
+      /* کرم روشن قبلی */
+      rgba(220, 220, 220, 0.3) 45%,
+      /* روشن‌تر و کمرنگ‌تر */
+      rgba(150, 150, 150, 0.3) 65%,
+      /* طوسی کمتر و محدودتر */
+      rgba(80, 80, 80, 0.2) 80%,
+      /* تیره کمرنگ‌تر */
+      transparent 90%
+      /* بقیه فضا روشن بمونه */
+    ),
+    #d7ccba;
 }
 
 .footer-first-row {
@@ -475,8 +725,8 @@ h2 {
 
 @media(max-width:768px) {
   .social-icon-container {
-      margin: 0px auto;
-      /* margin-top: 10px; */
+    margin: 0px auto;
+    /* margin-top: 10px; */
   }
 }
 
@@ -521,63 +771,69 @@ h2 {
   font-size: 14px;
 }
 
-.email-btn:hover{
+.email-btn:hover {
   background-color: #78000079;
-  
+
 }
 
 ul li {
   list-style-type: none;
 }
-.access-section{
+
+.access-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.access-h6{
+
+.access-h6 {
   text-align: right !important;
 }
-.access-ul{
-  
+
+.access-ul {
+
   text-align: right !important;
-  
+
 }
-.access-li:hover{
+
+.access-li:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
 .location-img {
   width: 250px;
   height: 200px;
   border-radius: 25px;
 }
-.copyright{
+
+.copyright {
   background-color: #616161;
   color: #ffffff;
   text-align: center;
   line-height: 57px
 }
-@media (max-width:768px){
-  .footer-first-row{
-      display: flex !important;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+
+@media (max-width:768px) {
+  .footer-first-row {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+
   .access-h6 {
-      text-align: center !important;
-    }
-  
-    .access-ul {
-      list-style: none;
-      padding: 0;
-      text-align: center !important;
-    }
-  
-  .location-section{
-      align-items: center !important;
+    text-align: center !important;
+  }
+
+  .access-ul {
+    list-style: none;
+    padding: 0;
+    text-align: center !important;
+  }
+
+  .location-section {
+    align-items: center !important;
   }
 
 }
-
-
