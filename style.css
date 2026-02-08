@@ -14,8 +14,8 @@
 
 body {
   font-family: 'Mj_Beirut', Arial, sans-serif;
-  
-   
+
+
 }
 
 html {
@@ -141,20 +141,18 @@ main {
 
   background: linear-gradient(90deg,
       rgba(255, 250, 240, 0.6) 0%,
- 
+
       rgba(245, 235, 220, 0.5) 25%,
-    
+
       rgba(220, 220, 220, 0.3) 45%,
-     
+
       rgba(150, 150, 150, 0.3) 65%,
-     
+
       rgba(80, 80, 80, 0.2) 80%,
-      
-      transparent 90%
-     
-    ),
+
+      transparent 90%),
     #d7ccba;
-   
+
 }
 
 
@@ -166,7 +164,7 @@ main {
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #202020;
- 
+
   font-size: 17px;
   font-weight: bold;
 
@@ -237,7 +235,7 @@ h2 {
 
 .service-btn {
   border-radius: 25px;
-  color:#780000;
+  color: #780000;
   text-decoration: none;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
@@ -276,10 +274,8 @@ h2 {
 
 
 .rol-box-1 {
- background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-   border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #640d14;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   width: 100%;
   height: 200px;
@@ -289,12 +285,12 @@ h2 {
   width: 100%;
   height: 190px;
   border-bottom-right-radius: 80px;
-  border-bottom: 3px solid #640d14;
+  border-bottom: 3px solid white;
 
 }
 
 .rol-box-1-para {
-  color:#640d14;
+  color: white;
   font-size: 35px;
 }
 
@@ -302,7 +298,7 @@ h2 {
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-   border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   width: 100%;
   height: 200px;
@@ -319,41 +315,37 @@ h2 {
 }
 
 .rol-box-2-para {
-   color:#640d14;
+  color: #640d14;
   font-size: 35px;
 }
 
 .rol-box-3 {
-
-  /* background-color:rgba(190, 171, 142, 0.5); */
-   background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-   border: 1px solid rgba(255, 255, 255, 0.2);
+ background-color: #640d14;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   width: 100%;
   height: 200px;
-  
+
 }
 
 .rol-box-3 div {
   width: 100%;
   height: 190px;
   border-bottom-left-radius: 80px;
-  border-bottom: 3px solid #640d14;
+  border-bottom: 3px solid white ;
 
 }
 
 .rol-box-3-para {
-  color:#640d14;
+  color:white;
   font-size: 35px;
 }
 
 .rol-box-4 {
-   background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-   border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
 
 }
@@ -363,14 +355,14 @@ h2 {
   height: 200px;
   border-bottom: none;
   border-top: 3px solid #640d14;
-  border-right: 3px solid  #640d14;
-  border-left: 3px solid  #640d14;
+  border-right: 3px solid #640d14;
+  border-left: 3px solid #640d14;
   border-top-left-radius: 70px;
 
 }
 
 .rol-box-4-para {
-   color:#640d14;
+  color: #640d14;
   font-size: 35px;
 }
 
@@ -624,7 +616,6 @@ h2 {
 #goTopBtn:hover {
   background-color: #780000;
 }
-
 .hover-img-1,
 .hover-img-2,
 .hover-img-3,
@@ -690,156 +681,40 @@ h2 {
 
 
 /* -----------------//footer//-------------------------- */
-.footer-section {
-  box-shadow: 0px 0px 8px 0px #cccccc;
-  background: linear-gradient(90deg,
-      rgba(255, 250, 240, 0.6) 0%,
-      /* روشن‌ترین کرم */
-      rgba(245, 235, 220, 0.5) 25%,
-      /* کرم روشن قبلی */
-      rgba(220, 220, 220, 0.3) 45%,
-      /* روشن‌تر و کمرنگ‌تر */
-      rgba(150, 150, 150, 0.3) 65%,
-      /* طوسی کمتر و محدودتر */
-      rgba(80, 80, 80, 0.2) 80%,
-      /* تیره کمرنگ‌تر */
-      transparent 90%
-      /* بقیه فضا روشن بمونه */
-    ),
-    #d7ccba;
+footer{
+  height: 500px;
+  background-color: #640d14;
 }
-.aboutUs-section{
-  margin-top: 50px;
+.footer-img{
+  width: 150px;
+  height: 150px;
 }
-.footer-h6{
-  font-size: 20px !important;
-  color: #780000;
-}
-.footer-first-row {
-  margin-top: 10px;
-  padding-top: 50px;
-  display: flex;
-}
-
-.social-icon-container {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  width: 225px;
-  justify-content: space-between;
-}
-
-@media(max-width:768px) {
-  .social-icon-container {
-    margin: 0px auto;
-    /* margin-top: 10px; */
-  }
-}
-
-.social-media-icon {
-  width: 50px;
+.footer-btn{
+ background-color: rgba(255,255,255,0.3);
+  width: 150px;
   height: 50px;
-}
-
-.logo-img {
-  width: 120px;
-  height: 180px;
-  object-fit: contain;
-}
-
-
-.email-subscribe-box {
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.email-subscribe-box h6 {
-  text-align: center;
-  margin-left: 10px;
-}
-
-.email-subscribe-box input[type="email"] {
-  width: 50%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-.email-btn {
-  padding: 10px 20px;
-  border: none;
-  background-color: #780000;
-  color: #fff;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.email-btn:hover {
-  background-color: #78000079;
-
-}
-
-ul li {
-  list-style-type: none;
-}
-
-.access-section {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.access-h6 {
-  text-align: right !important;
-}
-
-.access-ul {
-
-  text-align: right !important;
-
-}
-
-.access-li:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.location-img {
-  width: 250px;
-  height: 200px;
   border-radius: 25px;
+  border: 1px solid white;
 }
-
-.copyright {
-  background-color: #616161;
-  color: #ffffff;
-  text-align: center;
-  line-height: 57px
+.footer-img-1{
+  width: 200px;bottom: 90px;
+  height: 200px; 
 }
-
-@media (max-width:768px) {
-  .footer-first-row {
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .access-h6 {
-    text-align: center !important;
-  }
-
-  .access-ul {
-    list-style: none;
-    padding: 0;
-    text-align: center !important;
-  }
-
-  .location-section {
-    align-items: center !important;
-  }
-
+.footer-img-2{
+ width: 300px;
+ height: 250px;
+}
+.footer-icon-btn{
+  width: 30px;
+  height: 30px;
+}
+.footer-btn:hover{
+  background-color: #640d14;
+}
+.footer-icon{
+  width: 30px;
+  height: 30px;}
+.footer-para{
+color: white;
+font-size: 20px;
 }
